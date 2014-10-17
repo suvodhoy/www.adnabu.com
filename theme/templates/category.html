@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category|striptags }} | {{ super() }}{% endblock title %}
+
+{% block content %}
+<!-- Main -->
+<article id="main">
+
+  <header class="special container">
+    <span class="icon fa-mobile"></span>
+    <h2>{{ category }}</h2>
+    <!-- add page sub title here -->
+    <p>$ grep -r -l "{{ category|lower }}" /content/{{ category|lower }}/*.html</p>
+  </header>
+
+    <!-- One -->
+    <section class="wrapper style4 container">
+
+        <div class="row oneandhalf">
+
+            <div class="8u">
+                <div class="content">
+                {% for article in articles %}
+                    <section>
+                        <!-- <a href="#" class="image feature"><img src="images/pic03.jpg" alt="" /></a> -->
+                        <header>
+                            <a href="/{{ article.url }}"><h3>{{ article.title }}</h3></a>
+                        </header>
+                        <p>{{ article.summary|striptags }}</p>
+                    </section>
+                {% endfor %}
+                </div>
+            </div>
+
+
+            <div class="4u">
+                {% include 'sidebar.html' %}
+            </div> <!-- end sidebar 4u -->
+
+        </div>
+    </section>
+
+    <!-- Two -->
+    {% include 'most_recent.html' %}
+
+</article>
+{% endblock content %}
