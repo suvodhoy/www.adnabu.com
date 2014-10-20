@@ -4,3 +4,4 @@ output/*
 *.sh
 *.pyc
 cache/*
+.idea/*
