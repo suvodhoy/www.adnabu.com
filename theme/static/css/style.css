@@ -55,14 +55,14 @@
 	}
 
 	p, ul, ol, dl, table, blockquote {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
 		font-weight: 300;
 		line-height: 1.75em;
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 		text-transform: uppercase;
 	}
 
@@ -73,12 +73,22 @@
 		}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 2em;
 		letter-spacing: 0.1em;
 	}
 
 	h3 {
-		font-size: 1.15em;
+		font-size: 1.5em;
+		letter-spacing: 0.025em;
+	}
+
+    h4 {
+		font-size: 1.2em;
+		letter-spacing: 0.025em;
+	}
+
+    h5 {
+		font-size: 1em;
 		letter-spacing: 0.025em;
 	}
 
@@ -353,6 +363,15 @@
 
 				.icon.circle.fa-bitbucket:hover {
 					background: #df93b8;
+				}
+
+            .icon.circle.fa-facebook {
+				background: #3b5998;
+				color: white;
+			}
+
+				.icon.circle.fa-facebook:hover {
+					background: #336699;
 				}
 
 		.icon.feature {
@@ -824,7 +843,7 @@
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
-		padding: 7em 0;
+		/*padding: 7em 0;*/
 	}
 
 		#main > :last-child {

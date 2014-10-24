@@ -6,7 +6,7 @@
 <!-- Main -->
 <article id="main">
 
-  <header class="special container">
+  <div class="special container" style="text-align: center">
     {% if page.self == 'True' %}
       <span class="icon"><img class="clown" src="/images/me.jpg" ></span>
     {% else %}
@@ -14,8 +14,8 @@
     {% endif %}
     <h2>{{ page.title }}</h2>
     <!-- add page sub title here -->
-    <p>$ cat /pages/{{ page.title|lower }}/index.html | grep '{{ page.title }}'</p>
-  </header>
+    <!--<p>$ cat /pages/{{ page.title|lower }}/index.html | grep '{{ page.title }}'</p>-->
+  </div>
 
   <!-- One -->
   <section id="page" class="wrapper style4 container">
@@ -31,7 +31,7 @@
   </section>
 
   <!-- Two -->
-  {% include 'most_recent_alt.html' %}
+  <!--{% include 'most_recent_alt.html' %}-->
 
   </article>
 {% endblock content %}

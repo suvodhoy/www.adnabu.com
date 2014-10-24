@@ -6,42 +6,49 @@
 <!-- Main -->
 <article id="main">
 
-  <header class="special container">
-    <span class="icon fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-    </span>
-    <h2>Lover of <strong>programming</strong>, <strong>black teas</strong>, and <strong>bbq</strong>.</h2>
-    <p>Good with Python, Javascript, UI, data, & maths.<br>
-      I build things for fun and profit :)<br>
-      <strong>Go Noles!</strong></p>
-  </header>
+  <!--<div class="special container" style="text-align: center">    <span class="icon fa-stack fa-lg">-->
+      <!--&lt;!&ndash;<i class="fa fa-square fa-stack-2x"></i>&ndash;&gt;-->
+      <!--&lt;!&ndash;<i class="fa fa-terminal fa-stack-1x fa-inverse"></i>&ndash;&gt;-->
+    <!--</span>-->
+      <!--<h2>Write About the company</h2>-->
+    <!--&lt;!&ndash;<h2>Lover of <strong>programming</strong>, <strong>black teas</strong>, and <strong>bbq</strong>.</h2>&ndash;&gt;-->
+    <!--&lt;!&ndash;<p>Good with Python, Javascript, UI, data, & maths.<br>&ndash;&gt;-->
+      <!--&lt;!&ndash;I build things for fun and profit :)<br>&ndash;&gt;-->
+      <!--&lt;!&ndash;<strong>Go Noles!</strong></p>&ndash;&gt;-->
+  <!--</div>-->
 
   <!-- One -->
-  <section class="wrapper style2 container special-alt" style="display:none;">
+  <section class="wrapper style2 container special-alt">
     <div class="row half">
       <div class="8u">
 
         <header>
-          <h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+          <h2>Behold the <strong>benefits</strong> that define what we’re all about.</h2>
         </header>
-        <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-        <footer>
+        <p>Timely updates to your campaigns</p>
+        <p>Freedom to tweak your settings easily</p>
+        <p>Global Coverage</p>
+        <p>Continuous Maintenance</p>
+        <p>Innovative ideas</p>
+        <p>Shop Campaigns</p>
+        <p>Satisfied Customers</p>
+        <footer style="margin-top: 84px; padding-left:337px">
           <ul class="buttons">
-            <li><a href="#" class="button">Find Out More</a></li>
+            <li><a href="/pages/sem-tools.html" class="button">Check out our tools</a></li>
           </ul>
         </footer>
 
       </div>
       <div class="4u skel-cell-important">
-
         <ul class="feature-icons">
           <li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-          <li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
+          <li><span class="icon fa-globe"><span class="label">Feature 2</span></span></li>
           <li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-          <li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-          <li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-          <li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+          <li><span class="icon fa-wrench"><span class="label">Feature 4</span></span></li>
+          <li><span class="icon fa-lightbulb-o"><span class="label">Feature 5</span></span></li>
+          <li><span class="icon fa-gears"><span class="label">Feature 6</span></span></li>
+          <li><span class="icon fa-shopping-cart"><span class="label">Feature 6</span></span></li>
+          <li><span class="icon fa-smile-o"><span class="label">Feature 6</span></span></li>
         </ul>
 
       </div>
@@ -51,37 +58,37 @@
   <hr>
 
   <!-- Two -->
-  <section class="wrapper style1 container special">
-    <div class="row">
+  <!--<section class="wrapper style1 container special">-->
+    <!--<div class="row">-->
 
-      <div class="12u">
-        <h2>Latest Posts</h2>
-      </div>
+      <!--<div class="12u">-->
+        <!--<h2>Our Tools</h2>-->
+      <!--</div>-->
 
-      {% for article in articles_page.object_list %}
-      <div class="4u">
+      <!--{% for article in articles_page.object_list %}-->
+      <!--<div class="4u">-->
 
-        <section>
-          <span class="icon feature fa-{{ article.icon }}"></span>
-          <header>
-            <a href="/{{ article.url }}" rel='bookmark'><h3>{{ article.title }}</h3></a>
-          </header>
-          <p>{{ article.content[:196]|striptags }}...</p>
-          <footer>
-              <ul class="buttons">
-                  <li><a href="/{{ article.url }}" class="button small">Read More</a></li>
-              </ul>
-          </footer>
-        </section>
+        <!--<section>-->
+          <!--<span class="icon feature fa-{{ article.icon }}"></span>-->
+          <!--<header>-->
+            <!--<a href="/{{ article.url }}" rel='bookmark'><h3>{{ article.title }}</h3></a>-->
+          <!--</header>-->
+          <!--<p>{{ article.content[:196]|striptags }}...</p>-->
+          <!--<footer>-->
+              <!--<ul class="buttons">-->
+                  <!--<li><a href="/{{ article.url }}" class="button small">Read More</a></li>-->
+              <!--</ul>-->
+          <!--</footer>-->
+        <!--</section>-->
 
-      </div>
-      {% endfor %}
+      <!--</div>-->
+      <!--{% endfor %}-->
 
-    </div> <!-- /.row -->
+    <!--</div> &lt;!&ndash; /.row &ndash;&gt;-->
 
-    {% include 'pagination.html' %}
+    <!--{% include 'pagination.html' %}-->
 
-  </section> <!-- /section -->
+  <!--</section> &lt;!&ndash; /section &ndash;&gt;-->
 
 </article>
 
